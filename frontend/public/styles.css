@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Pacifico&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Inconsolata";
+}
+
+body {
+  background-color: #dcf5f7;
+  background-image: url(http://www.transparenttextures.com/patterns/arches.png);
+}
+
+.header {
+  position: relative;
+  height: 300px;
+  background-color: #88e8f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  color: white;
+}
+
+.day-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+
+.day-title {
+  color: #033670;
+  font-family: "Pacifico", cursive;
+  font-weight: 300;
+  font-size: 50px; 
+}
+
+.tasks {
+  background-color: white;
+  padding: 10px; 
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task {
+  background-color: white;
+  padding: 20px; 
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 20px; 
+}
+
+.task h1 {
+  margin: 15px 0;
+}
+
+.task-details {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 29px;
+  gap: 10px;
+}
+
+.task-date {
+  font-size: 18px; 
+  color: #555;
+}
+
+.delete-task,
+.add-task,
+.submit-task {
+  height: 45px; 
+  width: 45px; 
+  font-size: 18px; 
+  border: none;
+  border-radius: 50%;
+  background-color: #f2a516;
+  margin: 0; 
+}
+
+.delete-task:hover,
+.add-task:hover,
+.submit-task:hover {
+  color: white;
+  background-color: #033670;
+  transition: 0.5s;
+}
+
+.add-task {
+  margin: 30px auto;
+}
+
+.task-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.task-form-container form {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+  border: none;
+  width: 100%;
+  max-width: 700px;
+  margin-top: 50px;
+}
+
+.task-form-container form > * {
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 700px;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.submit-task {
+    height: max-content;
+}
+
+.task-form-container form > textarea, input {
+  width: 600px;
+}
+
+.no-tasks-message {
+    background-color: white;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
